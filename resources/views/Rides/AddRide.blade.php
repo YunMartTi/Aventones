@@ -57,7 +57,7 @@
                     </datalist>
                 </div>
                 <div class="form-group">
-                    <label>Model</label>
+                    <label>Models</label>
                     <input type="text" name="model" id="model" required>
                 </div>
                 <div class="form-group">
