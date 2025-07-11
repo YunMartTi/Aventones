@@ -92,6 +92,49 @@ table th {
   border-radius: 4px;
 }
 
+/* Para configuracion/Bio */
+
+.form-clean {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.form-clean .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-clean .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-clean .form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-clean .form-group input,
+.form-clean .form-group textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Fin Para configuracion/Bio */
+
+.container{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
 .full-width {
   width: 100%;
 }
@@ -120,6 +163,53 @@ input[type="number"] {
   width: 40%;
 
 }
+
+.my-button {
+  background-color: #3498db;  
+  color: white;            
+  border: none;               
+  padding: 10px 20px;        
+  font-size: 16px;          
+  border-radius: 5px;        
+  cursor: pointer;           
+  transition: background-color 0.3s ease;
+  float: right;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.my-button {
+  background-color: #3498db;  
+  color: white;            
+  border: none;               
+  padding: 10px 30px;        
+  font-size: 16px;          
+  border-radius: 5px;        
+  cursor: pointer;           
+  transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #2980b9;  
+}
+
+
 
 @media (max-width: 600px) {
   .form-row {

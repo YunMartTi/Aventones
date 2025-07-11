@@ -31,4 +31,7 @@ class RidesController extends Controller
         // Logic to show the form for adding a ride
         return view('Rides.AddRide');
     }
+    public function confBio(){
+        return view('perfil.configuracion');
+    }
 }
