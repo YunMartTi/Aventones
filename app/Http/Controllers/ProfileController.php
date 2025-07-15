@@ -8,7 +8,9 @@ class ProfileController extends Controller
 {
     public function register()
     {
-        // Logic to handle user registration
         return view('perfil.registro');
+    }
+    public function editar(){
+        return view('perfil.editar');
     }
 }

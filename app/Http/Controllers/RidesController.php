@@ -12,11 +12,6 @@ class RidesController extends Controller
         // Logic to retrieve and return rides
         return view('welcome');
     }
-    public function login()
-    {
-        // Logic to retrieve and return rides
-        return view('ingresoUsuarios.login');
-    }
     public function bookings()
     {
         // Logic to retrieve and return bookings
@@ -33,5 +28,9 @@ class RidesController extends Controller
     }
     public function confBio(){
         return view('perfil.configuracion');
+    }
+    public function home()
+    {
+        return view('rides.home');
     }
 }
