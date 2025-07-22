@@ -13,3 +13,5 @@ Route::get('/rides/add', [RidesController::class, 'addRide'])->name('addRide');
 Route::get('/perfil/configurar', [RidesController::class, 'confBio'])->name('biografia');
 Route::get('/perfil/editar', [ProfileController::class, 'editar'])->name('editProfile');
 Route::get('/home', [RidesController::class, 'home'])->name('home');
+Route::get('/rides/edit', [RidesController::class, 'editRide'])->name('editRide');
+Route::get('/rides/details', [RidesController::class, 'details'])->name('rideDetails'); 

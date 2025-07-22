@@ -1,6 +1,6 @@
 <x-app-layout>
     <p class="titles">Bookings</p>
-    <div class="table">
+    <div class="content-wrapper">
         <table class="bookings">
             <thead>
                 <tr>
@@ -13,7 +13,7 @@
                 <tr>
                     <td>Yunior Martinez</td>
                     <td>Pital - Ciudad Quesada</td>
-                    <td>Accept | Reject</td>
+                    <td><a href="{{ route('editRide') }}">Accept</a> | <a href="#">Reject</a></td>
                 </tr>
             </tbody>
         </table>

@@ -1,30 +1,30 @@
-<x-app-layout>
+<x-app-layout> <!-- Vista de inicio de Rides -->
     <section class="titulos">
-        <h2>Search rides</h2>
-        <hr>
+        <h2 class="titles">Search rides</h2>
     </section>
 
     <div class="search-box">
         <form action="{{ route('myRides') }}" method="GET" class="form-inline">
             <div class="form-row">
-            <label>From</label>
-            <select name="from">
-                <option>Quesada</option>
-                <option>Aguas Zarcas</option>
-            </select>
+                <label>From</label>
+                <select name="from">
+                    <option>Quesada</option>
+                    <option>Aguas Zarcas</option>
+                </select>
 
-            <label>To</label>
-            <select name="to">
-                <option>Zarcero</option>
-                <option>Alajuela</option>
-            </select>
+                <label>To</label>
+                <select name="to">
+                    <option>Zarcero</option>
+                    <option>Alajuela</option>
+                </select>
 
-            <button type="submit" class="my-button">Find rides</button>
+                <button class="my-button">Find rides</button>
             </div>
             <div class="form-row">
                 <label>Days</label>
-                @foreach (['Mon','Tue','Wed','Thu','Fri','Sat','Sun'] as $day)
-                    <label><input type="checkbox" name="days[]" value="{{ $day }}" checked> {{ $day }}</label>
+                @foreach (['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] as $day)
+                    <label><input type="checkbox" name="days[]" value="{{ $day }}" checked>
+                        {{ $day }}</label>
                 @endforeach
             </div>
         </form>
@@ -55,7 +55,7 @@
                     <td>2</td>
                     <td>Nissan Pathfinder 2015</td>
                     <td>$5</td>
-                    <td><a href="#">Request</a></td>
+                    <td><a href="{{ route('rideDetails') }}">Request</a></td>
                 </tr>
                 <tr>
                     <td><img src="{{ asset('imagenes/user-icon.png') }}" class="user-icon"> Nabarca</td>
@@ -64,7 +64,7 @@
                     <td>1</td>
                     <td>Toyota Corolla 2020</td>
                     <td>$10</td>
-                    <td><a href="#">Request</a></td>
+                    <td><a href="{{ route('rideDetails') }}">Request</a></td>
                 </tr>
                 <tr>
                     <td><img src="{{ asset('imagenes/user-icon.png') }}" class="user-icon"> Maricu</td>
@@ -73,7 +73,7 @@
                     <td>1</td>
                     <td>Ford Festiva 1990</td>
                     <td>--</td>
-                    <td><a href="#">Request</a></td>
+                    <td><a href="{{ route('rideDetails') }}">Request</a></td>
                 </tr>
             </tbody>
         </table>

@@ -10,7 +10,8 @@ class ProfileController extends Controller
     {
         return view('perfil.registro');
     }
-    public function editar(){
+    public function editar()
+    {
         return view('perfil.editar');
     }
 }

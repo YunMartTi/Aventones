@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout> <!-- Vista  de registro de usuario -->
     <p class="titles">User Registration</p>
     <form class="form-container">
         <div class="form-row">

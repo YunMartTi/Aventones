@@ -7,7 +7,7 @@
         <div class="form-row">
             <div class="form-group full-width">
                 <label for="name">Public Name</label>
-                <input type="text" name="name" id="name" value="Bladimir" required>
+                <input type="text" name="name" id="name" value="Yunior" required>
             </div>
         </div>
 
@@ -20,7 +20,7 @@
 
         <div class="form-footer">
             <a href="{{ route('bookings') }}">Cancel</a>
-            <button type="submit" class="my-button">Save</button>
+            <button class="my-button">Save</button>
         </div>
     </form>
 </x-app-layout>

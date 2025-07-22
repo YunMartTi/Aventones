@@ -1,20 +1,20 @@
-<x-app-layout>
+<x-app-layout> <!-- Vista  de edición de perfil -->
     <p class="titles">Edit Profile</p>
     <form class="form-container" method="POST" action="{{ route('editProfile') }}">
         <div class="form-row">
             <div class="form-group">
                 <label>First Name</label>
-                <input type="text" value="Yunior"/>
+                <input type="text" value="Yunior" />
             </div>
             <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" value="Martínez"/>
+                <input type="text" value="Martínez" />
             </div>
         </div>
 
         <div class="form-group full-width">
             <label>Email</label>
-            <input type="email" value="mrtn1806@gmail.com"/>
+            <input type="email" value="mrtn1806@gmail.com" />
         </div>
 
         <div class="form-row">
@@ -51,12 +51,16 @@
         <div class="form-row">
             <div class="form-group">
                 <label>City</label>
-                <input type="text" value="Quesada"/>
+                <input type="text" value="Quesada" />
             </div>
             <div class="form-group">
                 <label>Phone Number</label>
-                <input type="text" value="61065116"/>
+                <input type="text" value="61065116" />
             </div>
+        </div>
+        <div class="form-footer">
+            <a href="{{ route('myRides') }}">Cancel</a>
+            <button class="my-button">Save</button>
         </div>
     </form>
 </x-app-layout>
