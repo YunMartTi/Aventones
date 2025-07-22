@@ -1,5 +1,5 @@
 <x-app-layout>
-    <p class="titles">New Ride</p>
+    <p class="titles">Edit Ride</p>
     <form action="{{ route('bookings') }}" method="GET" class="form-container">
         @csrf
         <div class="form-row">
